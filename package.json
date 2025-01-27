@@ -2,10 +2,18 @@
   "name": "redis-om-types",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "neolaner",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "redis-om": "^0.4.7"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  }
 }
