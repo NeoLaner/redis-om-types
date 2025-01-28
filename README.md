@@ -85,6 +85,8 @@ export async function getArtists() {
 }
 ```
 
+**isArray** and **properties** added in ExtendedSchemaDefinition
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
