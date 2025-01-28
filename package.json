@@ -1,19 +1,28 @@
 {
   "name": "redis-om-types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
     "build": "tsc"
   },
   "author": "neolaner",
   "license": "ISC",
-  "dependencies": {
-    "redis-om": "^0.4.7"
-  },
   "devDependencies": {
+    "redis-om": "^0.4.7",
     "typescript": "^4.0.0"
+  },
+  "typesVersions": {
+    ">=4.0.0": {
+      "*": [
+        "types/v4/*"
+      ]
+    },
+    "<4.0.0": {
+      "*": [
+        "types/v3/*"
+      ]
+    }
   }
 }

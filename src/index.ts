@@ -1,4 +1,4 @@
-import { SchemaDefinition } from "redis-om";
+import { type SchemaDefinition } from "redis-om";
 
 export type ExtendedSchemaDefinition = SchemaDefinition &
   Record<string, { properties?: ExtendedSchemaDefinition; isArray?: boolean }>;
