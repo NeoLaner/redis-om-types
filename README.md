@@ -32,42 +32,25 @@ const artistsSchemaDefinition = {
   name: { type: "text", sortable: true },
   age: { type: "number" },
   city: { type: "text" },
-  working_hours: {
-    type: "string[]",
-    path: "artists.working_hours[*]",
-    isArray: true,
-    properties: {
-      salon_id: { type: "string" },
-      start: { type: "string" },
-      end: { type: "string" },
-      salon_name: { type: "text" },
-      working_days: { type: "number[]" },
-      city: { type: "text" },
-    },
-  },
   services: {
     type: "string[]",
     isArray: true,
     path: "artists.services[*]",
     properties: {
       id: { type: "string" },
-      name: { type: "string" },
+      name: { type: "text" },
       price: { type: "number" },
-      duration: { type: "number" },
-      description: { type: "text" },
+      category_id: { type: "string" },
       options: {
         type: "string[]",
         isArray: true,
         properties: {
-          name: { type: "string" },
+          name: { type: "text" },
           price: { type: "number" },
         },
       },
-      category_id: { type: "string" },
     },
   },
-  services_ids: { type: "string[]" },
-  salons_ids: { type: "string[]" },
 } as const satisfies ExtendedSchemaDefinition;
 
 export const artistsSchema = new Schema<
