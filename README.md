@@ -1,10 +1,16 @@
 # redis-om-types
 
-A TypeScript library utils for better support types in Redis OM.
+[![npm version](https://badge.fury.io/js/redis-om-types.svg)](https://badge.fury.io/js/redis-om-types)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+TypeScript type definitions and utilities for Redis OM (Object Mapping), providing type-safe interactions with Redis.
+
+## Features
+
+- Type-safe schema definitions
+- Automatic type inference for Redis entities
 
 ## Installation
-
-Install the package using npm:
 
 ```bash
 npm install redis-om-types --save-dev
@@ -81,4 +87,9 @@ export async function getArtists() {
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Related Projects
+
+- [Redis OM](https://github.com/redis/redis-om-node)
+- [Redis](https://redis.io/)
