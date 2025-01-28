@@ -1,6 +1,5 @@
 # redis-om-types
 
-[![npm version](https://badge.fury.io/js/redis-om-types.svg)](https://badge.fury.io/js/redis-om-types)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 TypeScript type definitions and utilities for Redis OM (Object Mapping), providing type-safe interactions with Redis.
